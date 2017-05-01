@@ -8,8 +8,12 @@ const config = {
   tempPath: '/tmp/'
 };
 
+const startDate = new Date();
+
 const cloudFFmpeg = new CloudFFmpeg(config);
 cloudFFmpeg.run(data).then((responses) => {
-    console.log("Everything works well.");
-    console.log(responses);
+  const endDate = new Date();
+  console.log(responses);
+  console.log("Taking times : " + (endDate - startDate));
+  console.log("Job's done!");
 });

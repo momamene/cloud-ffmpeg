@@ -4,7 +4,7 @@
     "storage": "azure",
     "path": {
       "containerName": "videos",
-      "blobName": "sample.mkv"
+      "blobName": "sample.webm"
     },
     "ffmpegOptions": [
     ]
